@@ -1,10 +1,12 @@
 import React from "react";
 import "./Button.css";
 
-export default ({ variant, children, ...rest }) => {
+export default ({ variant = "", color = "", children, ...rest }) => {
   return (
     <button
-      className={`button ${variant} ${rest.disableShadow && "disableShadow"}`}
+      className={`button ${variant} ${color} ${
+        rest.disableShadow && "disableShadow"
+      }`}
       {...rest}
     >
       {children}

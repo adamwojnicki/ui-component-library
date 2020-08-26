@@ -45,6 +45,18 @@
   background-color: rgba(41, 98, 255, 0.1);
 }
 
-.disableShadow {
+.button.disableShadow {
   box-shadow: none;
+}
+
+.button:disabled,
+.button[disabled] {
+  background-color: #e0e0e0;
+  color: #9e9e9e;
+  pointer-events: none;
+}
+
+.button.text:disabled,
+.button.text[disabled] {
+  background: none;
 }
