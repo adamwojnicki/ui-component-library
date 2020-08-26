@@ -14,9 +14,24 @@ export const DisableShadow = () => (
     Disable Shadow
   </Button>
 );
-export const Disabled = () => <Button disabled={true}>Disabled</Button>;
+export const Disabled = () => (
+  <Button disabled={true} disableShadow>
+    Disabled
+  </Button>
+);
 export const TextDisabled = () => (
   <Button variant="text" disabled={true}>
     Text Disabled
+  </Button>
+);
+
+export const StartIcon = () => (
+  <Button color="primary" startIcon="alarm_on">
+    Start Icon
+  </Button>
+);
+export const EndIcon = () => (
+  <Button color="primary" endIcon="alarm_on">
+    End Icon
   </Button>
 );
