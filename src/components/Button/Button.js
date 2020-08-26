@@ -3,7 +3,10 @@ import "./Button.css";
 
 export default ({ variant, children, ...rest }) => {
   return (
-    <button className={`button ${variant}`} {...rest}>
+    <button
+      className={`button ${variant} ${rest.disableShadow && "disableShadow"}`}
+      {...rest}
+    >
       {children}
     </button>
   );
