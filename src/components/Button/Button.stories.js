@@ -6,14 +6,19 @@ export default {
   component: Button,
 };
 
-export const Default = () => <Button>Default</Button>;
+// DEFAULT BTNS
+export const Basic = () => <Button>Basic</Button>;
 export const Outline = () => <Button variant="outline">Outline</Button>;
 export const Text = () => <Button variant="text">Text</Button>;
+
+// NO SHADOW
 export const DisableShadow = () => (
   <Button color="primary" disableShadow>
     Disable Shadow
   </Button>
 );
+
+// DISABLED
 export const Disabled = () => (
   <Button disabled={true} disableShadow>
     Disabled
@@ -25,6 +30,7 @@ export const TextDisabled = () => (
   </Button>
 );
 
+// WITH ICONS
 export const StartIcon = () => (
   <Button color="primary" startIcon="alarm_on">
     Start Icon
@@ -35,6 +41,7 @@ export const EndIcon = () => (
     End Icon
   </Button>
 );
+// SIZES
 export const Small = () => (
   <Button color="primary" size="sm">
     Small
@@ -50,3 +57,9 @@ export const Large = () => (
     Large
   </Button>
 );
+
+// COLORS
+export const Default = () => <Button color="default">Default</Button>;
+export const Primary = () => <Button color="primary">Primary</Button>;
+export const Secondary = () => <Button color="secondary">Secondary</Button>;
+export const Danger = () => <Button color="danger">Danger</Button>;

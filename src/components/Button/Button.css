@@ -19,11 +19,6 @@
   background-color: #aeaeae;
 }
 
-.button.primary {
-  color: #fff;
-  background-color: #3d5afe;
-}
-
 .button.outline {
   background-color: transparent;
   border: 1px solid #3d5afe;
@@ -78,4 +73,28 @@
 }
 .button.lg {
   padding: 11px 22px;
+}
+
+.button.primary {
+  color: #fff;
+  background-color: #3d5afe;
+}
+
+.button.primary:hover {
+  background-color: #0039cb;
+}
+
+.button.secondary {
+  background-color: #455a64;
+  color: #fff;
+}
+.button.secondary:hover {
+  background-color: #1c313a;
+}
+.button.danger {
+  background-color: #d32f2f;
+  color: #fff;
+}
+.button.danger:hover {
+  background-color: #9a0007;
 }
