@@ -35,3 +35,18 @@ export const EndIcon = () => (
     End Icon
   </Button>
 );
+export const Small = () => (
+  <Button color="primary" size="sm">
+    Small
+  </Button>
+);
+export const Medium = () => (
+  <Button color="primary" size="md">
+    Medium
+  </Button>
+);
+export const Large = () => (
+  <Button color="primary" size="lg">
+    Large
+  </Button>
+);

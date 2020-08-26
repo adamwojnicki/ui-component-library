@@ -69,3 +69,13 @@
 .button.endIcon i {
   margin-left: 6px;
 }
+
+.button.sm {
+  padding: 6px 12px;
+}
+.button.md {
+  padding: 8px 16px;
+}
+.button.lg {
+  padding: 11px 22px;
+}

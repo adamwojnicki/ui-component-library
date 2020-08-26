@@ -2,12 +2,13 @@ import React from "react";
 import "./Button.css";
 import MaterialIcon from "material-icons-react";
 
-export default ({ variant = "", color = "", children, ...rest }) => {
+export default ({ variant = "", color = "", size = "", children, ...rest }) => {
   return (
     <button
       className={`button 
         ${variant} 
         ${color} 
+        ${size}
         ${rest.disableShadow && "disableShadow"}
         ${rest.startIcon && "startIcon"}
         ${rest.endIcon && "endIcon"}
